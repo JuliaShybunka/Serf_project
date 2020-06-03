@@ -53,7 +53,7 @@
     }
 }
 
-.slider-dots {
+.slider-dotsHead {
     position: absolute;
     right: 50px;
     bottom: 36px;
@@ -205,12 +205,12 @@
         top: 50px;
         opacity: 0.25;
     }
-    .slick-slide:nth-child(4n+1) {
+    .slick-slide:nth-child(4n + 1) {
         .surf-box {
             margin-top: 32px;
         }
     }
-    .slick-slide:nth-child(4n+3) {
+    .slick-slide:nth-child(4n + 3) {
         .surf-box {
             margin-top: 89px;
         }
@@ -272,6 +272,81 @@
     left: 0;
     right: 0;
     display: none;
+}
+
+.slider-map {
+    max-width: 1200px;
+    min-height: 635px;
+    background: no-repeat center url(../img/word-map-dots.png);
+    background-size: cover;
+    margin: 0 auto;
+    .slick-list {
+        min-height: 635px;
+    }
+}
+
+.slider-dots {
+    position: relative;
+    &--1 {
+        top: 330px;
+        left: 10px;
+    }
+    &--2 {
+        top: 290px;
+        .slider-dots__circle {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../img/mini-marker.png);
+                background-size: cover;
+                width: 14px;
+                height: 16px;
+                top: -50px;
+                right: -50px;
+            }
+        }
+    }
+    &--3 {
+        top: 318px;
+        left: 20px;
+    }
+    &--4 {
+        top: 501px;
+        right: 50px;
+    }
+    &--5 {
+        top: 212px;
+        right: 50px;
+    }
+    &--6 {
+        top: 555px;
+        right: 130px;
+    }
+    &--7 {
+        top: 395px;
+        right: 80px;
+    }
+    &--8 {
+        top: 491px;
+        left: 20px;
+    }
+    &__circle {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color: $green;
+        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
+    }
+    &__content {
+        display: none;
+    }
+    &__content-row {}
+    &__content-title {}
+    &__content-subtitle {}
+    &__content-item {}
+    &__content-number {}
+    &__content-name {}
 }
 
 @import "media";
