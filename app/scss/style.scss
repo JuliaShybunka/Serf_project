@@ -283,6 +283,11 @@
     .slick-list {
         min-height: 635px;
     }
+    .slick-current {
+        .slider-dots__content {
+            display: block;
+        }
+    }
 }
 
 .slider-dots {
@@ -340,13 +345,57 @@
     }
     &__content {
         display: none;
+        width: 283px;
+        min-height: 216px;
+        padding: 28px 32px;
+        background-color: rgba($color: #0F1010, $alpha: 0.7);
+        border-radius: 6px;
     }
-    &__content-row {}
-    &__content-title {}
-    &__content-subtitle {}
-    &__content-item {}
-    &__content-number {}
-    &__content-name {}
+    &__content-link {
+        padding-top: 4px;
+    }
+    &__content-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content-title {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 1px;
+            background-color: #4AF6CD;
+        }
+    }
+    &__content-subtitle {
+        text-transform: none;
+        line-height: 19px;
+    }
+    &__content-item {
+        text-align: center;
+        display: inline-block;
+        padding-top: 30px;
+        img {
+            display: inline-block;
+            margin-bottom: 7px;
+        }
+    }
+    &__content-number {
+        font-weight: 800;
+        line-height: 23px;
+    }
+    &__content-name {
+        font-weight: 300;
+        font-size: 10px;
+    }
 }
 
 @import "media";
