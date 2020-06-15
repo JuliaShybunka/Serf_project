@@ -22,7 +22,8 @@ a {
     color: #fff;
 }
 
-.headline-left {
+.headline-left,
+.headline-right {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
@@ -93,6 +94,24 @@ li {
         span {
             font-weight: 100;
         }
+    }
+}
+
+.descr {
+    display: inline-block;
+    &_head {
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+    }
+}
+
+.headline-right {
+    padding-right: 103px;
+    padding-left: 0;
+    &::before {
+        right: 0;
+        left: auto;
     }
 }
 
