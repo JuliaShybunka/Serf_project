@@ -427,4 +427,42 @@
     }
 }
 
+// Travel section
+.travel {
+    margin-top: 122px;
+    &__slider {
+        margin-top: 80px;
+    }
+    &__slider-item {}
+}
+
+.title {}
+
+.travel-slider {
+    &__head {}
+    &__subtitle {}
+    &__descr {
+        min-height: 200px;
+    }
+    &__info {}
+    &__info-item {}
+    &__info-subtitle {}
+    &__info-title {}
+    &__btn {}
+}
+
+.subtitle {
+    &__head {}
+}
+
+.headline-left {}
+
+.descr {
+    &_head {}
+}
+
+.headline-right {}
+
+.btn {}
+
 @import "media";
