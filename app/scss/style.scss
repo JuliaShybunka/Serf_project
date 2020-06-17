@@ -188,7 +188,6 @@
 }
 
 .surf {
-    padding: 160px 0 120px;
     background: no-repeat url(../img/surf-bg.svg);
     background-position: right 200px;
 }
@@ -429,7 +428,7 @@
 
 // Travel section
 .travel {
-    margin-top: 122px;
+    background: no-repeat bottom right url(../img/travel-bg.png);
     &__slider {
         margin-top: 80px;
     }
@@ -439,16 +438,66 @@
 .title {}
 
 .travel-slider {
-    &__head {}
-    &__subtitle {}
-    &__descr {
-        min-height: 200px;
+    &__head {
+        min-height: 780px;
+        background-repeat: no-repeat;
+        background-position: top left;
     }
-    &__info {}
-    &__info-item {}
-    &__info-subtitle {}
-    &__info-title {}
-    &__btn {}
+    &__subtitle {}
+    &__info {
+        margin: 0 auto;
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__info-item {
+        position: relative;
+        max-width: 265px;
+        min-height: 200px;
+        margin-bottom: 66px;
+    }
+    &__info-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        color: rgba($color: #fff, $alpha: 0.5);
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        position: absolute;
+        width: 200px !important;
+        text-align: right;
+        height: auto;
+        top: 85px;
+        left: -100px;
+        white-space: nowrap;
+    }
+    &__info-title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+        padding-left: 40px;
+        position: relative;
+        span {
+            font-size: 14px;
+            text-align: right;
+            letter-spacing: 5.25px;
+            color: rgba($color: #fff, $alpha: 0.75);
+            font-weight: 400;
+            position: absolute;
+            right: 0;
+            top: 35px;
+        }
+    }
+    &__descr {
+        margin-top: -230px;
+        padding: 160px 0 0 132px;
+        min-height: 320px;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    &__btn {
+        text-align: center;
+    }
 }
 
 .subtitle {
@@ -458,11 +507,15 @@
 .headline-left {}
 
 .descr {
-    &_head {}
+    display: inline-block;
+    &_head img {
+        margin-left: 26px;
+    }
 }
 
-.headline-right {}
-
-.btn {}
+.surf,
+.travel {
+    padding: 160px 0 120px;
+}
 
 @import "media";
